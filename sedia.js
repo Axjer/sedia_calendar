@@ -24,13 +24,13 @@ const scheduleData = [
   { date: "2026/05/16", course: "國文", todo: "分組報告", note: "" },
   { date: "2026/05/16", course: "程式設計(二)", todo: "上機考", note: "" },
   { date: "2026/05/22", course: "英文", todo: "口頭報告", note: "33-21號" },
-  { date: "2026/05/29", course: "英文", todo: "口頭報告", note: "20-1號" },
   {
     date: "2026/05/23",
     course: "國文",
     todo: "分組報告、習作二（活動報導）",
     note: "",
   },
+  { date: "2026/05/29", course: "英文", todo: "口頭報告", note: "20-1號" },
   { date: "2026/05/30", course: "國文", todo: "分組報告", note: "" },
 
   // 6月
