@@ -1,7 +1,10 @@
 // --- 1. 資料區 ---
 //課程名稱：
 //離散數學、Python程式設計與人工智慧應用、作業系統概論、英文、國文、程式設計(二)
-
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  document.documentElement.setAttribute("data-theme", "dark");
+}
 const scheduleData = [
   // 4月
   { date: "2026/04/11", course: "國文", todo: "習作一（飲食札記）", note: "" },
@@ -96,9 +99,11 @@ function toggleTheme() {
   if (currentTheme === "dark") {
     html.removeAttribute("data-theme");
     themeToggleBtn.textContent = "🌙 深色模式";
+    localStorage.setItem("theme", "light"); // 儲存為淺色模式
   } else {
     html.setAttribute("data-theme", "dark");
     themeToggleBtn.textContent = "☀️ 亮色模式";
+    localStorage.setItem("theme", "dark"); // 儲存為深色模式
   }
 }
 
